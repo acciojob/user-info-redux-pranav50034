@@ -16,6 +16,7 @@ const App = () => {
     dispatch(name(e.target.value))
   }
   
+  
 
   return (
      <div>
