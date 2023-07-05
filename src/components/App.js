@@ -15,8 +15,6 @@ const App = () => {
   function handelName(e){
     dispatch(name(e.target.value))
   }
-
-  const faltuName = "Thomas Edward Stark";
   
 
   return (
@@ -30,14 +28,9 @@ const App = () => {
            <label htmlFor="email">Email: </label>
            <input onChange={handelEmail} type="email" id="email" />
         </p>
+        <p>Current values in store:</p>
         <div className="output">
-           <p>Current values in store:</p>
-           {
-            !userName && <p>Name : {faltuName}</p>
-           }
-           {
-            userName && <p>Name : {userName}</p>
-           }
+           <p>Name : {userName}</p>
            <p>Email : {userEmail}</p>
         </div>
      </div>
