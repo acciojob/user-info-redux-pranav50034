@@ -33,7 +33,7 @@ const App = () => {
         <div className="output">
            <p>Current values in store:</p>
            {
-            !userName && <p>{faltuName}</p>
+            !userName && <p>Name : {faltuName}</p>
            }
            {
             userName && <p>Name : {userName}</p>
