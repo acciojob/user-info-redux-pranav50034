@@ -19,26 +19,19 @@ const App = () => {
 
   return (
      <div>
+        <h1>User Information</h1>
         <p>
            <label htmlFor="name">Name: </label>
-           <input
-              onChange={handelName}
-              type="text"
-              id="name"
-           />
+           <input onChange={handelName} type="text" id="name" />
         </p>
         <p>
            <label htmlFor="email">Email: </label>
-           <input
-              onChange={handelEmail}
-              type="email"
-              id="email"
-           />
+           <input onChange={handelEmail} type="email" id="email" />
         </p>
-        <div>
-          <p>Current values in store:</p>
-          <p>Name : {userName}</p>
-          <p>Email : {userEmail}</p>
+        <div className="output">
+           <p>Current values in store:</p>
+           <p>Name : {userName}</p>
+           <p>Email : {userEmail}</p>
         </div>
      </div>
   );
